@@ -1,33 +1,60 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<html>
+
 <head>
-    <title>best thing since sliced bread</title>
-    <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lato" rel="stylesheet">
-    <link href="resources/spin.css" rel="stylesheet" type="text/css">
-    <style type="text/css">
-        img {
-            display: block;
-            width: 200px;
-            height: auto;
-        }
-        
-        .bread {
-            text-align:center; 
-            position: absolute; 
-            top: 50%; 
-            left: 50%; 
-            transform: translate(-50%, -50%);
-        }
-    </style>
+    <title>The best thing since sliced bread</title>
+    <link href="media/favicon.ico"
+        rel="icon" type="image/x-icon" />
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8" />
 </head>
 
-<body>
-    <a href="http://upfor.digital/JohannesHelden/red_shift.html">
-        <div class="bread">
-          <img src="media/bread.png" class="ILOVETOSPIN">
-        </div>
-    </a>
+<script src="main.js"></script>
+<script src="taco.js"></script>
+<script src="jquery-3.1.1.min.js"></script>
+
+<body onload="init();">
+
+    <div class='score'>
+        <p>
+            JOAN HAS EATEN:
+            <b id="score"></b> BREAD
+        </p>
+    </div>
+
+    <div class="text">
+        <p>
+            <b class="hello">OH HAI!</b>
+            <br />
+            <br />My name is Joan Zheng.
+            <br />
+            <br />I am a 4th year student at the University of Minnesota, I am doing NLP research and I will be presenting a paper at AAAI 2019!!
+            <br />
+            <br />Check me out at the following links:
+        </p>
+        <ul>
+            <li>
+                <a href="https://github.com/jovalie" target="blank">github</a>
+            </li>
+            <li>
+                <a href="https://uploads.codesandbox.io/uploads/user/5f5b1ecd-ac15-4c7f-803e-e11ff53ea4ce/ope1-ZhengJoan-Resume.pdf" target="blank">resume</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/joan-zheng-6909a2126/" target="blank">linkedin</a>
+            </li>
+            <li>
+                <a href="mailto:zheng673@umn.edu" target="blank">email</a>
+            </li>
+            <li>
+                <a href="https://github.com/wuweiweiwu/joan-website" target="blank">source</a>
+            </li>
+        </ul>
+        <p style="text-align: right;">
+            ... or you can feed me <a href="#" onclick="$('.text').fadeOut();">LOTS OF BREAD</a>!
+        </p>
+    </div>
+
+    <canvas id="canvas">
+    </canvas>
 </body>
 
 </html>
